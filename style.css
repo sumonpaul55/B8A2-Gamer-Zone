@@ -1,0 +1,441 @@
+.bg-blue {
+  background-color: blue;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gentium Book Plus", serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Peddana", serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+:root {
+  --primary-color: #ff42a5;
+}
+/* --------------------------- shared css ------------------------ */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.row {
+  display: flex;
+  gap: 30px;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+.grid {
+  display: grid;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* all column
+.col-2 {
+  width: 50%;
+}
+.col-3 {
+  width: 33.33%;
+}
+.col-4 {
+  width: 25%;
+}
+ */
+.col-5 {
+  width: 19%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.btn-praimary {
+  padding: 15px 40px;
+  border-radius: 48px;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  border: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/*-------------------------------------------------------------------------------------------
+----------------------- Css will start from here ---------------------------------------*/
+/* header */
+nav {
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo {
+  gap: 10px;
+}
+.logo h1 {
+  font-size: 2.8rem;
+}
+.logo .G {
+  color: var(--primary-color);
+}
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+nav ul a {
+  text-decoration: none;
+  color: #3c354f;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+nav .follow {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 15px 20px;
+  gap: 20px;
+}
+nav .follow svg {
+  width: 30px;
+  height: 25px;
+  color: #f61c0d;
+}
+/* hero section */
+.hero-section {
+  background-image: url("./images/Group 14.png");
+  background-repeat: no-repeat;
+  background-position: 100% left;
+  padding: 50px 0;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero-left .goat {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+}
+.hero-left ul li {
+  list-style: none;
+  margin: 15px 0;
+  color: #534c64;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.hero-left span {
+  color: #0b0223;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.rogue-button {
+  background: #4ec5f7;
+  margin-left: 20px;
+}
+
+/* Gamer Section */
+
+.gamer-section {
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+  padding: 50px 0px;
+  width: 100%;
+}
+.gamer-layout {
+  grid-template-columns: 3fr 2fr;
+}
+.gamer-text {
+  text-align: right;
+}
+.gamer-ptext {
+  margin: 25px 0px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.spantext {
+  color: #534c64;
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 45px; /* 187.5% */
+}
+.spantext span {
+  color: #534c64;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 45px;
+}
+.gamer-text h1 {
+  font-size: 3.8rem;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0px;
+}
+
+/* online-games-section */
+.online-layout {
+  gap: 20px;
+  align-content: center;
+}
+.online-games-section {
+  margin: 50px 0px;
+}
+.online-games {
+  text-align: center;
+  margin: 20px 0px;
+}
+.online {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.online-games p {
+  margin-bottom: 35px;
+}
+.online-layout p {
+  color: #534c64;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 25px; /* 150% */
+  margin-top: 15px;
+}
+
+.online span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.online-games-img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.hover-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  border-radius: 15px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+  display: none;
+}
+.online-games-img:hover .hover-item {
+  display: flex;
+}
+/* Play Instant Section */
+.instant-section {
+  padding: 50px 0;
+}
+.instant-section .inner-container {
+  max-width: 900px;
+  margin-left: auto;
+}
+.instant-layout {
+  align-items: center;
+  gap: 30px;
+  text-align: right;
+}
+.instant-text {
+  align-items: center;
+  max-width: 380px;
+}
+.play-text {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.play-text span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.instant-img {
+  position: relative;
+  height: 520px;
+  width: 450px;
+}
+.instant-big-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 410px;
+}
+.instant-ismal-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+}
+/* brand section */
+.branding-section {
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+  padding: 50px 0;
+}
+.branding-section span {
+  color: #0b0223;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.brand-layout {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.brand-item {
+  padding: 5px;
+  gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50px;
+  background: #fff;
+  margin: 20px 0;
+}
+.brand-item:hover {
+  border: 1px solid var(--primary-color);
+}
+.brand-item:hover span {
+  color: var(--primary-color);
+}
+/* career design */
+.career-section {
+  padding: 60px 0;
+  background: url("images/Vector 2.png");
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  background-position: center right;
+}
+.career-top .c-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  margin: 24px 0;
+}
+.career-desc {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.career-inside-item {
+  margin: 30px 0;
+}
+.career-inside-item ul li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 40px; /* 200% */
+}
+.career-section .career-btn {
+  padding: 21px 40px;
+  border-radius: 48px;
+  background: #fff;
+  border: none;
+}
+
+/* Responsive for md (768px) */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  .md-mx-auto {
+    margin: 0 auto;
+  }
+  /* nav bar */
+  .nav-bar,
+  .nav-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-layout {
+    grid-template-columns: auto;
+    gap: 30px;
+    grid-auto-flow: dense;
+  }
+  .gamer-layout {
+    grid-template-columns: auto;
+  }
+  .gamer-layout > div:last-child {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+  .spantext {
+    margin-top: 30px;
+    text-align: center;
+  }
+  /* online  */
+  .online-layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .online-layout > div {
+    text-align: center;
+  }
+  .instant-layout {
+    flex-direction: column;
+  }
+  .instant-text {
+    text-align: center;
+  }
+  /* branding */
+  .brand-layout .brand-item {
+    width: 32%;
+  }
+  /* career layout */
+  .career-layout {
+    grid-template-columns: auto;
+  }
+}
+
+/* Responsive for phone (576px) */
+@media screen and (max-width: 576px) {
+  .online-layout {
+    grid-template-columns: auto;
+  }
+  .brand-layout .brand-item {
+    width: 49%;
+    justify-content: start;
+  }
+}
