@@ -305,7 +305,7 @@ nav .follow svg {
 }
 /* play game */
 .play-games-layout {
-  gap: 40px;
+  gap: 30px;
 }
 .play-games-layout .play-ismal-img {
   position: absolute;
@@ -535,10 +535,15 @@ nav .follow svg {
   }
   .play-games-layout .play-ismal-img {
     right: -11%;
+    width: 160px;
   }
   /* branding */
+  .brand-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .brand-layout .brand-item {
-    width: 32%;
+    width: 100% !important;
   }
   /* career layout */
   .career-layout {
