@@ -59,15 +59,12 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* all column
-
-.col-3 {
-  width: 33.33%;
+button {
+  cursor: pointer;
 }
-.col-4 {
-  width: 25%;
+svg {
+  cursor: pointer;
 }
- */
 .col-2 {
   width: 49%;
 }
@@ -393,6 +390,10 @@ nav .follow svg {
   border-radius: 48px;
   background: #fff;
   border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 /* Footer */
 .footer-section {
@@ -467,7 +468,7 @@ nav .follow svg {
     font-size: 80%;
   }
   .container {
-    padding: 0 80px;
+    padding: 0 50px;
   }
   .md-mx-auto {
     margin: 0 auto;
@@ -512,7 +513,7 @@ nav .follow svg {
   }
   /* online  */
   .online-layout {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
   .online-layout .online-games-img img {
@@ -581,7 +582,16 @@ nav .follow svg {
     width: 49%;
     justify-content: start;
   }
-  .career-inside-item {
+
+  .online-layout {
     grid-template-columns: auto;
+    gap: 30px;
+  }
+  .branding-section .brand-item img {
+    width: 40px;
+    height: 40px;
+  }
+  .branding-section .brand-item span {
+    font-size: 0.8rem;
   }
 }
