@@ -476,7 +476,7 @@ nav .follow svg {
   }
   .hero-first-item {
     background: url("images/Group 14.png") no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding: 40px 0;
   }
   .hero-layout {
