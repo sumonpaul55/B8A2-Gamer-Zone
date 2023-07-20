@@ -60,9 +60,7 @@
 }
 
 /* all column
-.col-2 {
-  width: 50%;
-}
+
 .col-3 {
   width: 33.33%;
 }
@@ -70,6 +68,9 @@
   width: 25%;
 }
  */
+.col-2 {
+  width: 49%;
+}
 .col-5 {
   width: 19%;
 }
@@ -260,7 +261,7 @@ nav .follow svg {
 }
 /* Play Instant Section */
 .instant-section {
-  padding: 50px 0;
+  padding: 50px 0 100px 0;
 }
 .instant-section .inner-container {
   max-width: 1000px;
@@ -294,6 +295,21 @@ nav .follow svg {
   bottom: -12%;
   width: 200px;
 }
+/* play game */
+.play-games-layout {
+  gap: 40px;
+}
+.play-games-layout .play-ismal-img {
+  position: absolute;
+  right: -18%;
+  width: 200px;
+  bottom: -12%;
+}
+.play-game-content .instant-text {
+  text-align: left;
+  margin-left: auto;
+  max-width: 420px;
+}
 /* brand section */
 .branding-section {
   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
@@ -309,7 +325,6 @@ nav .follow svg {
   flex-wrap: wrap;
   gap: 10px;
 }
-
 .brand-item {
   padding: 5px;
   gap: 10px;
@@ -466,8 +481,11 @@ nav .follow svg {
   }
   /* online  */
   .online-layout {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+  .online-layout .online-games-img img {
+    width: 100%;
   }
   .online-layout > div {
     text-align: center;
@@ -483,6 +501,18 @@ nav .follow svg {
   .instant-text p:last-child {
     margin: 30px 0;
   }
+  .instant-ismal-img {
+    left: -10%;
+  }
+  .play-games-layout {
+    flex-direction: column-reverse;
+  }
+  .play-games-layout .col-2 {
+    width: 100%;
+  }
+  .play-games-layout .play-ismal-img {
+    right: -11%;
+  }
   /* branding */
   .brand-layout .brand-item {
     width: 32%;
@@ -490,6 +520,7 @@ nav .follow svg {
   /* career layout */
   .career-layout {
     grid-template-columns: auto;
+    gap: 60px;
   }
   /* footer */
   .f-menu {
@@ -498,7 +529,6 @@ nav .follow svg {
   .f-logo {
     grid-template-columns: repeat(3, auto);
   }
-
   .f-condition {
     grid-template-columns: repeat(2, auto);
   }
@@ -509,11 +539,12 @@ nav .follow svg {
   .container {
     padding: 0 20px;
   }
-  .online-layout {
-    grid-template-columns: auto;
-  }
+
   .brand-layout .brand-item {
     width: 49%;
     justify-content: start;
+  }
+  .career-inside-item {
+    grid-template-columns: auto;
   }
 }
