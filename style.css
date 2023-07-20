@@ -525,7 +525,8 @@ nav .follow svg {
     margin: 30px 0;
   }
   .instant-ismal-img {
-    left: -10%;
+    left: -8%;
+    width: 160px;
   }
   .play-games-layout {
     flex-direction: column-reverse;
@@ -534,8 +535,8 @@ nav .follow svg {
     width: 100%;
   }
   .play-games-layout .play-ismal-img {
-    right: -8%;
-    width: 160px;
+    right: -6%;
+    width: 160px !important;
   }
   /* branding */
   .brand-layout {
