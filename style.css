@@ -163,6 +163,14 @@ nav .follow svg {
   background: #4ec5f7;
   margin-left: 20px;
 }
+.hero-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-list {
+  margin: 10px 0;
+}
 
 /* Gamer Section */
 
@@ -462,10 +470,25 @@ nav .follow svg {
     flex-direction: column;
     gap: 20px;
   }
+  /* hero */
+  .hero-section {
+    background: none;
+  }
+  .hero-first-item {
+    background: url("images/Group 14.png") no-repeat;
+    background-size: contain;
+    padding: 40px 0;
+  }
   .hero-layout {
-    grid-template-columns: auto;
+    flex-direction: column-reverse;
     gap: 30px;
-    grid-auto-flow: dense;
+  }
+  .hero-layout .col-2 {
+    width: 100%;
+  }
+  /* gammer */
+  .gamer-section {
+    background: none;
   }
   .gamer-layout {
     grid-template-columns: auto;
